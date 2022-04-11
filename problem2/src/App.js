@@ -34,7 +34,7 @@ function App() {
   };
 
   const handleChange = ({ target }) => {
-    setSelect(null)
+    setSelect(null);
     setBoxes(createBoxes(target.value));
   };
 
@@ -43,7 +43,12 @@ function App() {
       <form style={styles.formStyle}>
         <label htmlFor="create">
           <h1>How many boxes?</h1>
-          <input id="create" name="create" onChange={handleChange}  />
+          <input
+            id="create"
+            name="create"
+            onChange={handleChange}
+            placeholder={"Enter a number"}
+          />
         </label>
         <br />
       </form>
@@ -63,4 +68,3 @@ function App() {
 }
 
 export default App;
-
