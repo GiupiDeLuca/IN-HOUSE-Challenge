@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-function Box({ onClick, selectedChoice, box }) {
+function Box({ onClick, selectedBox, box }) {
   const [hover, setHover] = useState(false);
 
   const styles = {
     boxStyle: {
       backgroundColor:
-        selectedChoice && selectedChoice.id === box.id ? "black" : "#70D6FF",
+        selectedBox && selectedBox.id === box.id ? "black" : "#70D6FF",
       width: "100px",
       height: "100px",
     },

@@ -58,7 +58,7 @@ function App() {
             <Box
               box={box}
               onClick={(select) => setSelect(select)}
-              selectedChoice={select}
+              selectedBox={select}
             />
           ))}
         </div>
